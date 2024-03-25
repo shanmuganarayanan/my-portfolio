@@ -19,9 +19,14 @@ const Header = () => {
 
     return(
         <div className="flex justify-between items-center">
-            <div className="flex items-center gap-5">
-                <img src={Profilepic} className="w-16 h-16"/>
-                <NavLink className="text-4xl font-bold text-emerald-800 select-none" to="/">Shanmuganarayanan</NavLink>
+            <div className="flex items-center gap-5 select-none">
+                <NavLink className="text-4xl font-bold text-emerald-800" to="/">
+                  <img src={Profilepic} className="w-12 h-12"/>
+                </NavLink>
+                <div>
+                  <p className="text-xl font-bold text-emerald-800">Shanmuganarayanan</p>
+                  <p className="text-base text-gray-400">UI Developer & Product Designer</p>
+                </div>
             </div>            
             <div className="flex gap-5">
                 <CustomNavLink to="/works" text="Works"/>  

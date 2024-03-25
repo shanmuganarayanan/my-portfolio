@@ -7,8 +7,24 @@ body {
   font-family: 'Inter' ,  sans-serif;
 }
 
-.work-scroll{
-  height: calc(100vh - 4.3rem);
-  margin-right: 5px;
-  overflow-y: auto;
+@keyframes slideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-slide-in {
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(10);
+  }
+}
+
+.bounce {
+  animation: moveLeftToRight 0.7s ease infinite;
 }
