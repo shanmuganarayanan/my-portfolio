@@ -1,10 +1,10 @@
 import { BrowserRouter } from 'react-router-dom';
-import Appcontroler from './Appcontroler/Appcontroler';
+import Home from "../src/Pages/Home/Home"
 
 function App() {
   return (
     <BrowserRouter>
-      <Appcontroler />
+      <Home />
     </BrowserRouter>
   );
 }
