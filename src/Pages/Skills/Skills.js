@@ -20,7 +20,7 @@ const Skills = ({
     ]
 
     return(
-        <div ref={resumeRef} id="works" className="flex flex-col px-10 lg:h-full py-20 gap-10">
+        <div ref={resumeRef} id="works" className="flex flex-col px-10 2xl:h-full py-24 gap-10">
             <Title text={"My Tech Stack"}/>
             <div className="flex flex-col justify-center items-center mt-10 h-full">
                 <div className="flex flex-wrap justify-center w-10/12 gap-20">

@@ -7,7 +7,7 @@ const About = ({ profileRef }) => {
     <div
       ref={profileRef}
       id="aboutme"
-      className="flex flex-col items-center w-full px-5 py-10 md:px-10 md:py-20 gap-10 lg:h-full bg-[#F6F9FA]"
+      className="flex flex-col items-center w-full px-5 py-24 md:px-10 gap-10 2xl:h-full bg-[#F6F9FA]"
     >
       <div className="flex flex-col justify-center items-center w-full">
         <div className="flex flex-col w-10/12">
@@ -20,7 +20,7 @@ const About = ({ profileRef }) => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 place-items-center items-center w-10/12 lg:w-8/12 mt-10 h-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 place-items-center lg:place-items-start items-center w-10/12 lg:w-8/12 mt-10 h-full">
         <div className="">
           <img src={Profilepic} className="" alt="Profile" />
         </div>

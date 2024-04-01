@@ -4,7 +4,7 @@ export const Maincontainer = tw.div`
     flex 
     flex-col 
     px-10 
-    py-20 
+    py-24 
     bg-[#F6F9FA]
 `
 export const Firstcard = tw.div`
