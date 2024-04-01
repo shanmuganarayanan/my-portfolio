@@ -3,8 +3,9 @@ import tw from "tailwind-styled-components";
 export const Maincontainer = tw.div`
     flex 
     flex-col 
-    px-10 
+    px-5 
     py-24 
+    md:px-10
     bg-[#F6F9FA]
 `
 export const Firstcard = tw.div`

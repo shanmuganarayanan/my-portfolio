@@ -20,7 +20,7 @@ const About = ({ profileRef }) => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 place-items-center lg:place-items-start items-center w-10/12 lg:w-8/12 mt-10 h-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 place-items-center items-center w-10/12 lg:w-8/12 mt-10 h-full">
         <div className="">
           <img src={Profilepic} className="" alt="Profile" />
         </div>
