@@ -6,7 +6,6 @@ export const Maincontainer = tw.div`
     px-10 
     py-20 
     bg-[#F6F9FA]
-    lg:h-full
 `
 export const Firstcard = tw.div`
     flex 

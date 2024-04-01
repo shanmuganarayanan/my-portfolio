@@ -9,7 +9,7 @@ const Header = ({
 }) => {
 
   const [isValue,setIsValue] = useState("");
-  const [ViewButtons,setViewButtons] = useState(true);
+  const [ViewButtons,setViewButtons] = useState(false);
 
   const AnchorLink = ({ to, text, onClick }) => {
     return (
