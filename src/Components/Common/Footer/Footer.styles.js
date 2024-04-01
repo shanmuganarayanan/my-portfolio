@@ -8,7 +8,7 @@ export const Maincontainer = tw.div`
     items-center 
     gap-10 
     bg-[#F6F9FA] 
-    px-5
+    p-5
 `
 
 export const Footertextwrapper = tw.p`
