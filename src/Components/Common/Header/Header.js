@@ -9,10 +9,11 @@ const Header = ({
 }) => {
 
   const [isValue,setIsValue] = useState("");
+  const [ViewButtons,setViewButtons] = useState(true);
 
   const AnchorLink = ({ to, text, onClick }) => {
     return (
-      <ScrollLink to={to} smooth={true} duration={500} className={isValue === to ?  "text-[#00A8CC] font-medium text-xl underline underline-offset-4" : "text-gray-400 font-medium text-xl hover:text-[#00A8CC] hover:underline hover:underline-offset-4" } onClick={onClick}>
+      <ScrollLink to={to} smooth={true} duration={500} className={isValue === to ?  "text-[#00A8CC]  font-medium text-xl underline underline-offset-4" : "text-gray-400 font-medium text-xl hover:text-[#00A8CC] hover:underline hover:underline-offset-4" } onClick={onClick}>
           {text}
       </ScrollLink>
     );    
@@ -21,19 +22,40 @@ const Header = ({
   console.log(isValue);
   
     return(
-        <div className="flex justify-between items-center px-10 py-6 fixed w-full bg-white">
+      <>
+       {ViewButtons && 
+       <div className="p-10 fixed flex flex-col justify-center gap-10 bg-white w-full top-0 h-full lg:hidden">
+           <AnchorLink to="works" text="Works" onClick={() => {
+                  workScroll();
+                  setIsValue("works");
+                  setViewButtons(false);
+                }}/> 
+                <AnchorLink to="skills" text="Skills" onClick={() => {
+                  resumeScroll();
+                  setIsValue("skills");
+                  setViewButtons(false);
+                }}/> 
+                <AnchorLink to="aboutme" text="About Me" 
+                onClick={() => {
+                  ProfileScroll();
+                  setIsValue("aboutme");
+                  setViewButtons(false);
+                }}/>      
+       </div>}
+        <div className="flex justify-between items-center px-5 lg:px-10 py-6 fixed w-full bg-white">
             <div className="flex items-center gap-5 select-none">
                 <div>
                   <ScrollLink to="/" className="text-xl font-bold text-[#FF6464] cursor-pointer"
                    onClick={() => {
                     aboutScroll();
                     setIsValue("");
+                    setViewButtons(false);
                   }}>
                     Shanmuganarayanan
                   </ScrollLink>
                 </div>
             </div>            
-            <div className="flex gap-5">
+            <div className="hidden lg:block lg:flex gap-5">
                 <AnchorLink to="works" text="Works" onClick={() => {
                   workScroll();
                   setIsValue("works");
@@ -48,7 +70,20 @@ const Header = ({
                   setIsValue("aboutme");
                 }}/>           
             </div>
+            <div className={`lg:hidden cursor-pointer ${ViewButtons? "text-[#FF6464]" : "text-gray-400"}`} onClick={() => setViewButtons(!ViewButtons)}>
+              {ViewButtons ?
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              :
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> 
+               }
+
+            </div>
         </div>
+      </>
     )
 }
 
