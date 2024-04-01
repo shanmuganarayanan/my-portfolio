@@ -1,21 +1,24 @@
-import { ReactComponent as LinkedinIcon } from "./linkedin.svg";
-import { ReactComponent as GithubIcon } from "./Github.svg";
-import { ReactComponent as ArrowrightIcon } from "./Arrowright.svg";
-import { ReactComponent as DownIcon } from "./Downarrow.svg";
-import { ReactComponent as UpIcon } from "./Arrowup.svg";
+import {ReactComponent as DownloadIcon} from "../Icons/Download.svg";
+import {ReactComponent as GmailIcon} from "../Icons/Gmail.svg";
+import {ReactComponent as LinkedinIcon} from "../Icons/Linkedin.svg";
+import {ReactComponent as InstaIcon} from  "../Icons/Instagram.svg";
+import {ReactComponent as DribbbleIcon} from "../Icons/Dribbble.svg";
+import {ReactComponent as GithubIcon} from "../Icons/Gitbuh.svg";
 
 export const ICON_MAP = {
-    LinkedIn : LinkedinIcon,
-    Github : GithubIcon,
-    Rightarrow : ArrowrightIcon,
-    Arrowdown : DownIcon,
-    Arrowup : UpIcon,
+    Download : DownloadIcon,
+    Gmail : GmailIcon,
+    Linkedin : LinkedinIcon,
+    Instagram : InstaIcon,
+    Dribbble : DribbbleIcon,
+    Github : GithubIcon
 }
 
 export {
+    DownloadIcon,
+    GmailIcon,
     LinkedinIcon,
-    GithubIcon,
-    ArrowrightIcon,
-    DownIcon,
-    UpIcon
+    InstaIcon,
+    DribbbleIcon,
+    GithubIcon
 }
