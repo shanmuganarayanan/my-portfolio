@@ -23,15 +23,17 @@ export const Secondcard = tw.div`
     flex-grow 
 `
 export const Cardinnerwrapper = tw.div`
-    lg:flex 
-    lg:flex-rows-2 
+    lg:grid
+    lg:grid-cols-2
     bg-white 
     w-10/12 
-    lg:h-[395px] 
+    lg:h-full 
     items-center 
     border 
     border-[#D5EDF4] 
     rounded-lg
+    select-none
+    hover:shadow-xl
 `
 export const Imagecontainer = tw.div`
     h-full 
