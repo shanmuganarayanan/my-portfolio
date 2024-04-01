@@ -73,8 +73,10 @@ export const Descriptiontext = tw.p`
 `
 export const Buttonwrapper = tw.div`
     mt-10 
-    flex 
+    lg:flex 
+    grid
     items-center 
+    justify-start
     gap-3
 `
 export const Buttonprimary = tw.button`
