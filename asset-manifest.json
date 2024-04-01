@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.33529b8c.css",
-    "main.js": "/my-portfolio/static/js/main.47bc5d15.js",
+    "main.css": "/my-portfolio/static/css/main.e99e5fd4.css",
+    "main.js": "/my-portfolio/static/js/main.48a4b556.js",
     "static/js/453.0a36081d.chunk.js": "/my-portfolio/static/js/453.0a36081d.chunk.js",
     "static/media/Shanmuganarayanan-resume_compressed.pdf": "/my-portfolio/static/media/Shanmuganarayanan-resume_compressed.e906abd13536314313a8.pdf",
     "static/media/Shanmuganarayanan.png": "/my-portfolio/static/media/Shanmuganarayanan.9c28360110ec871bd388.png",
@@ -24,12 +24,12 @@
     "static/media/HTML.svg": "/my-portfolio/static/media/HTML.465f11a228e6b6896e1b4e0b8efd7aee.svg",
     "index.html": "/my-portfolio/index.html",
     "static/media/Vscode.svg": "/my-portfolio/static/media/Vscode.3808439ddfa50063c0bac5c7442ded89.svg",
-    "main.33529b8c.css.map": "/my-portfolio/static/css/main.33529b8c.css.map",
-    "main.47bc5d15.js.map": "/my-portfolio/static/js/main.47bc5d15.js.map",
+    "main.e99e5fd4.css.map": "/my-portfolio/static/css/main.e99e5fd4.css.map",
+    "main.48a4b556.js.map": "/my-portfolio/static/js/main.48a4b556.js.map",
     "453.0a36081d.chunk.js.map": "/my-portfolio/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33529b8c.css",
-    "static/js/main.47bc5d15.js"
+    "static/css/main.e99e5fd4.css",
+    "static/js/main.48a4b556.js"
   ]
 }
