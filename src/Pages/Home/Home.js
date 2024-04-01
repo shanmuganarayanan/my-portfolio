@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import Header from "../../Components/Common/Header/Header";
 import Button from "../../Components/Common/Buttons/Button"
-import Linkbutton from "../../Components/Common/Linkbtn/Linkbutton";
 import CaseStudy from "../../Components/Assets/Images/Ux-casestudy.png";
 import Productimg from "../../Components/Assets/Images/Product.png";
 import Profilepic from "../../Components/Assets/Images/Shanmuganarayanan.png"
 import Footer from "../../Components/Common/Footer/Footer";
+import Resume from "../../Components/Assets/Shanmuganarayanan-resume_compressed.pdf";
 
 const Home = () => {
     
@@ -33,6 +33,16 @@ const Home = () => {
         profileRef.current.scrollIntoView({behavior : "smooth"});
     }
 
+    const onButtonClick = () => {
+        const pdfUrl = Resume;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Shanmuganarayanan_resume.pdf"; 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <main className="h-screen">
             <article className="h-full">
@@ -41,7 +51,7 @@ const Home = () => {
                     <p className="text-6xl font-bold text-center">Hi 👋  I’m Shanmuganaryanan</p>
                     <p className="text-3xl text-center w-3/4 mt-4">A product designer & frontend developer with 2+ years of experience in crafting beautiful and intuitive products. Currently building 0 ➡  1 product at Klickflow.</p>
                     <div className="mt-10">
-                        <Button title={"Download Resume"}/>
+                        <Button title={"Download Resume"} onClick={onButtonClick}/>
                     </div>
                 </div>
                 <div ref={workref} id="works" className="flex flex-col px-10 py-20 bg-[#F6F9FA]">
