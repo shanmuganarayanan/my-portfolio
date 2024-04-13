@@ -1,11 +1,9 @@
 import React, { useRef } from "react";
 import Header from "../../Components/Common/Header/Header";
 import Button from "../../Components/Common/Buttons/Button"
-import Profilepic from "../../Components/Assets/Images/Shanmuganarayanan.png"
 import Footer from "../../Components/Common/Footer/Footer";
 import Resume from "../../Components/Assets/Shanmuganarayanan-resume_compressed.pdf";
 import Works from "../Works/Works";
-import Title from "../../Components/Common/Title/Title";
 import Skills from "../Skills/Skills";
 import About from "../About/About";
 
