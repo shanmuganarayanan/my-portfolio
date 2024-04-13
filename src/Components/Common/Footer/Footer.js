@@ -20,7 +20,7 @@ const Footer = () => {
     }
 
     const dribbbleHandler = () =>{
-        window.open("https://dribbble.com/aravindh_nagarajan", "_blank");
+        window.open("https://dribbble.com/Shanmuganarayanan_05", "_blank");
     }
 
     const List = [
