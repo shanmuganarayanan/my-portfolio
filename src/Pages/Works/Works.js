@@ -17,7 +17,7 @@ const Works = ({
     }
 
     const CasestudyHandler = () => {
-        window.open("https://tinyurl.com/msdnhnmn","_blank");
+        window.open("https://tinyurl.com/yb8yxvzt","_blank");
     }
 
     return(
