@@ -1,6 +1,8 @@
 import React from "react";
 import CaseStudy from "../../Components/Assets/Images/Ux-casestudy.png";
 import Productimg from "../../Components/Assets/Images/Product.png";
+import MovieBox from "../../Components/Assets/Images/movie-box.png";
+import Infrapods from "../../Components/Assets/Images/infrapods.png";
 import Title from "../../Components/Common/Title/Title";
 import { Buttonprimary, Buttonsecontary, Buttonwrapper, Cardinnerwrapper, Descriptioncontainer, Descriptiontext, Firstcard, Imagecontainer, Imagewrapper, Maincontainer, Secondcard, Subtitletext, Subtitlewrapper, Titlewrapper } from "./Works.styles";
 
@@ -18,6 +20,14 @@ const Works = ({
 
     const CasestudyHandler = () => {
         window.open("https://tinyurl.com/yb8yxvzt","_blank");
+    }
+
+    const MovieboxHandler = () => {
+        window.open("https://shanmuganarayanan.github.io/movie-box/","_blank");
+    }
+
+    const InfrapodHandler = () => {
+        window.open("https://wonderful-ground-087b1820f.5.azurestaticapps.net/","_blank");
     }
 
     return(
@@ -61,6 +71,46 @@ const Works = ({
                         <Buttonwrapper>
                             <Buttonprimary onClick={CasestudyHandler}>
                                 View Case Study
+                            </Buttonprimary>
+                        </Buttonwrapper>
+                    </Descriptioncontainer>
+                </Cardinnerwrapper>
+            </Secondcard>
+
+             <Secondcard>
+                <Cardinnerwrapper>
+                    <Imagecontainer>
+                        <Imagewrapper src={MovieBox} style={{borderRadius:10}}/>
+                    </Imagecontainer>
+                    <Descriptioncontainer>
+                        <Titlewrapper>Movie Box</Titlewrapper>
+                        <Subtitlewrapper>
+                            <Subtitletext>March 2024</Subtitletext>
+                        </Subtitlewrapper>
+                        <Descriptiontext>Design and developed a clone version of Netflix</Descriptiontext>
+                        <Buttonwrapper>
+                            <Buttonprimary onClick={MovieboxHandler}>
+                                View Project
+                            </Buttonprimary>
+                        </Buttonwrapper>
+                    </Descriptioncontainer>
+                </Cardinnerwrapper>
+            </Secondcard>
+
+            <Secondcard>
+                <Cardinnerwrapper>
+                    <Imagecontainer>
+                        <Imagewrapper src={Infrapods} style={{borderRadius:10}}/>
+                    </Imagecontainer>
+                    <Descriptioncontainer>
+                        <Titlewrapper>InfraPod</Titlewrapper>
+                        <Subtitlewrapper>
+                            <Subtitletext>July 2024</Subtitletext>
+                        </Subtitlewrapper>
+                        <Descriptiontext>Design and developed a cloud based pod management web application</Descriptiontext>
+                        <Buttonwrapper>
+                            <Buttonprimary onClick={InfrapodHandler}>
+                                View Project
                             </Buttonprimary>
                         </Buttonwrapper>
                     </Descriptioncontainer>

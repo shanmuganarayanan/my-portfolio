@@ -22,6 +22,8 @@ export const Secondcard = tw.div`
     justify-center 
     items-center 
     flex-grow 
+    mb-[32px]
+    overflow-hidden
 `
 export const Cardinnerwrapper = tw.div`
     lg:grid
