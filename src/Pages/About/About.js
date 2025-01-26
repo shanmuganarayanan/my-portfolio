@@ -26,17 +26,11 @@ const About = ({ profileRef }) => {
         </div>
         <div className="flex flex-col">
           <p className="text-2xl mb-5">
-            Hello! I’m Shanmuganarayanan. Currently working as developer &
-            designer at Wiqly for the past 2 years. I am currently working in
-            remote from my hometown Kumbakonam, Tamil Nadu.
+          Hi, I’m Shanmuganarayanan, a passionate UI/UX designer and frontend developer with over 2 years of experience crafting seamless user experiences and responsive interfaces. I specialize in modern web technologies and design systems, staying ahead of industry trends. Currently, I work remotely from Kumbakonam, Tamil Nadu, delivering innovative solutions that bridge design and functionality.
           </p>
 
           <p className="text-2xl mb-5">
-            I completed my master’s in computer applications from Sastra
-            University in 2022. I specialize in front end development and have
-            full understanding on technologies like react.js, JavaScript etc. I
-            started my career as UX Engineer where I was responsible for
-            designing and development of their product and website.
+          I completed my Master’s in Computer Applications from SASTRA University in 2022 and specialize in UI/UX design and frontend development with expertise in React.js and JavaScript. I began my career as a UX Engineer, focusing on designing and developing user-centric products and websites.
           </p>
         </div>
       </div>

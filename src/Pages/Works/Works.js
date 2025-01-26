@@ -1,8 +1,8 @@
 import React from "react";
 import CaseStudy from "../../Components/Assets/Images/Ux-casestudy.png";
-import Productimg from "../../Components/Assets/Images/Product.png";
 import MovieBox from "../../Components/Assets/Images/movie-box.png";
 import Infrapods from "../../Components/Assets/Images/infrapods.png";
+import cloud from "../../Components/Assets/Images/01cloud.png";
 import Title from "../../Components/Common/Title/Title";
 import { Buttonprimary, Buttonsecontary, Buttonwrapper, Cardinnerwrapper, Descriptioncontainer, Descriptiontext, Firstcard, Imagecontainer, Imagewrapper, Maincontainer, Secondcard, Subtitletext, Subtitlewrapper, Titlewrapper } from "./Works.styles";
 
@@ -27,13 +27,13 @@ const Works = ({
     }
 
     const InfrapodHandler = () => {
-        window.open("https://wonderful-ground-087b1820f.5.azurestaticapps.net/","_blank");
+        window.open("https://console.01cloud.io//","_blank");
     }
 
     return(
         <Maincontainer ref={workref}>
             <Title text={"Works"}/>
-            <Firstcard>
+            {/* <Firstcard>
                 <Cardinnerwrapper>
                     <Imagecontainer>
                         <Imagewrapper src={Productimg} />
@@ -55,7 +55,7 @@ const Works = ({
                         </Buttonwrapper>
                     </Descriptioncontainer>
                 </Cardinnerwrapper>
-            </Firstcard>
+            </Firstcard> */}
 
             <Secondcard>
                 <Cardinnerwrapper>
@@ -108,6 +108,26 @@ const Works = ({
                             <Subtitletext>July 2024</Subtitletext>
                         </Subtitlewrapper>
                         <Descriptiontext>Design and developed a cloud based pod management web application</Descriptiontext>
+                        <Buttonwrapper>
+                            <Buttonprimary onClick={InfrapodHandler}>
+                                View Project
+                            </Buttonprimary>
+                        </Buttonwrapper>
+                    </Descriptioncontainer>
+                </Cardinnerwrapper>
+            </Secondcard>
+
+            <Secondcard>
+                <Cardinnerwrapper>
+                    <Imagecontainer>
+                        <Imagewrapper src={cloud} style={{borderRadius:10}}/>
+                    </Imagecontainer>
+                    <Descriptioncontainer>
+                        <Titlewrapper>01Cloud</Titlewrapper>
+                        <Subtitlewrapper>
+                            <Subtitletext>Aug 2024 - Present</Subtitletext>
+                        </Subtitlewrapper>
+                        <Descriptiontext>Design and developed a cloud based web application</Descriptiontext>
                         <Buttonwrapper>
                             <Buttonprimary onClick={InfrapodHandler}>
                                 View Project
